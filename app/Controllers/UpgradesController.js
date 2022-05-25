@@ -21,7 +21,7 @@ function _drawMultiplier() {
 export class UpgradesController {
   constructor() {
     console.log('upgraezzzzz');
-    ProxyState.on('cheese', _drawMultiplier)
+    ProxyState.on('upgrades', _drawMultiplier)
     ProxyState.on('cheese', _drawUpgrades)
     _drawUpgrades()
     _drawMultiplier()

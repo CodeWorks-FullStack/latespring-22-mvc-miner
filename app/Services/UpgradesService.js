@@ -10,11 +10,13 @@ class UpgradesService {
       foundUpgrade.quantity++
       cheese *= 3
       console.log(foundUpgrade);
+      ProxyState.upgrades = ProxyState.upgrades
       return foundUpgrade
     } else {
       throw new Error("Bud.... you dont have the caysh")
     }
   }
+
 }
 
 export const upgradesService = new UpgradesService()
